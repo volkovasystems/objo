@@ -1,0 +1,27 @@
+{
+	"name": "objo",
+	"version": "0.0.0",
+	"description": "Object object class wrapper.",
+	"main": "objo.deploy.js",
+	"support": "objo.support.js",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"objo",
+		"class",
+		"wrapper"
+	],
+	"homepage": "https://github.com/volkovasystems/objo",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {}
+}

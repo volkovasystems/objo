@@ -1,0 +1,38 @@
+{
+  "name": "objo",
+  "version": "0.0.0",
+  "description": "Object object class wrapper.",
+  "main": "objo.js",
+  "support": "objo.support.js",
+  "deploy": "objo.deploy.js",
+  "browser": "objo.deploy.js",
+  "scripts": {
+	  "pristine": "rsetmod clean && flxc execute ./.install.sh",
+	  "clear": "rsetmod clean --clear",
+	  "formal": "jesy apply '*.json'",
+	  "build:support": "gulp --module objo,data --all",
+	  "build:deploy": "webpack --config webpack.compact.js --progress --display-modules",
+	  "rebuild": "npm run build:support && npm run build:deploy",
+	  "build": "npm run pristine && npm run rebuild",
+	  "test": "npm run test:server && npm run test:client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/objo.git"
+  },
+  "keywords": [
+    "objo",
+    "class",
+    "wrapper"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "contributors": [
+  	"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+  	"Vinse Vinalon <vinsevinalon@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/objo/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/objo#readme"
+}
