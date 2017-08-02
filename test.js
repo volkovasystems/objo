@@ -1,7 +1,7 @@
 "use strict";
 
 /*;
-	@module-license:
+	@test-license:
 		The MIT License (MIT)
 		@mit-license
 
@@ -25,66 +25,65 @@
 		LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 		OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 		SOFTWARE.
-	@end-module-license
+	@end-test-license
 
-	@module-configuration:
+	@test-configuration:
 		{
 			"package": "objo",
-			"path": "objo/objo.js",
-			"file": "objo.js",
-			"module": "objo",
+			"path": "objo/test.module.js",
+			"file": "test.module.js",
+			"module": "test",
 			"author": "Richeve S. Bebedor",
 			"eMail": "richeve.bebedor@gmail.com",
-			"contributors": [
-				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
-			],
-			"repository": "https://github.com/volkovasystems/objo.git",
-			"test": "objo-test.js",
-			"global": true
+			"repository": "https://github.com/volkovasystems/objo.git"
 		}
-	@end-module-configuration
+	@end-test-configuration
 
-	@module-documentation:
-		Object object class wrapper.
-	@end-module-documentation
+	@test-documentation:
+
+	@end-test-documentation
 
 	@include:
 		{
-			"ehm": "ehm",
-			"harden": "harden"
+			"assert": "should",
+			"objo": "objo"
 		}
 	@end-include
 */
 
-const harden = require( "harden" );
-
-const Meta = require( "ehm" )( );
+const assert = require( "should" );
 
 //: @server:
-const Data = require( "./data.js" );
+const objo = require( "./objo.js" );
 //: @end-server
 
-//: @client:
-const Data = require( "./data.support.js" );
-//: @end-client
 
-const objo = function objo( entity ){
-	/*;
-		@meta-configuration:
-			{
-				"entity:required": "object"
-			}
-		@end-meta-configuration
-	*/
 
-	if( typeof entity != "object" ){
-		throw new Error( "invalid object entity" );
-	}
 
-	return Meta.create( Data, entity );
-};
 
-harden( "Data", Data, objo );
-harden( "Data", Data, Meta );
 
-module.exports = objo;
+//: @server:
+
+describe( "objo", ( ) => {
+
+	describe( "`objo( { 'hello': 'world' } )`", ( ) => {
+		it( "should return Data instance", ( ) => {
+			let data = objo( { "hello": "world" } );
+
+			assert.equal( typeof data, "object" );
+
+			assert.equal( data.constructor.name, "Data" );
+
+			assert.deepEqual( data.valueOf( ), { "hello": "world" } );
+		} );
+	} );
+
+} );
+
+//: @end-server
+
+
+
+
+
+

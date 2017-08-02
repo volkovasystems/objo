@@ -1,0 +1,84 @@
+{
+	"state": {
+		"passed": 1,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-02T17:42:00.646Z",
+	"end": "2017-08-02T17:42:30.035Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "objo",
+			"duration": 0,
+			"start": "2017-08-02T17:42:29.118Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "objo",
+			"duration": 742,
+			"start": "2017-08-02T17:42:29.118Z",
+			"end": "2017-08-02T17:42:29.860Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-02T17:42:29.120Z",
+					"end": "2017-08-02T17:42:29.120Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "objo",
+					"associatedTest": "should return Data instance"
+				},
+				{
+					"start": "2017-08-02T17:42:29.859Z",
+					"end": "2017-08-02T17:42:29.860Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "objo",
+					"associatedTest": "should return Data instance"
+				},
+				{
+					"start": "2017-08-02T17:42:29.860Z",
+					"end": "2017-08-02T17:42:29.861Z",
+					"duration": 1,
+					"title": "\"after all\" hook",
+					"associatedSuite": "objo"
+				}
+			]
+		},
+		{
+			"name": "`objo( { 'hello': 'world' } )`",
+			"duration": 741,
+			"start": "2017-08-02T17:42:29.119Z",
+			"end": "2017-08-02T17:42:29.860Z",
+			"tests": [
+				{
+					"name": "should return Data instance",
+					"start": "2017-08-02T17:42:29.119Z",
+					"end": "2017-08-02T17:42:29.859Z",
+					"duration": 740,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

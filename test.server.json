@@ -1,0 +1,32 @@
+{
+	"stats": {
+		"suites": 2,
+		"tests": 1,
+		"passes": 1,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-02T17:41:59.344Z",
+		"end": "2017-08-02T17:41:59.353Z",
+		"duration": 9
+	},
+	"tests": [
+		{
+			"title": "should return Data instance",
+			"fullTitle": "objo `objo( { 'hello': 'world' } )` should return Data instance",
+			"duration": 6,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should return Data instance",
+			"fullTitle": "objo `objo( { 'hello': 'world' } )` should return Data instance",
+			"duration": 6,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
+}

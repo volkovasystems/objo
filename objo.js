@@ -36,8 +36,7 @@
 			"author": "Richeve S. Bebedor",
 			"eMail": "richeve.bebedor@gmail.com",
 			"contributors": [
-				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-				"Vinse Vinalon <vinsevinalon@gmail.com>"
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
 			],
 			"repository": "https://github.com/volkovasystems/objo.git",
 			"test": "objo-test.js",
@@ -67,8 +66,20 @@ const Data = require( "./data.js" );
 
 
 
-const objo = function objo( ){
-	return Meta.create( Data, data );
+const objo = function objo( entity ){
+	/*;
+		@meta-configuration:
+			{
+				"entity:required": "object"
+			}
+		@end-meta-configuration
+	*/
+
+	if( typeof entity != "object" ){
+		throw new Error( "invalid object entity" );
+	}
+
+	return Meta.create( Data, entity );
 };
 
 harden( "Data", Data, objo );

@@ -1,7 +1,15 @@
 yarn add \
 babel-runtime \
+blon \
 ehm \
+fno \
+glyo \
 harden \
+ndfo \
+nol \
+numo \
+stro \
+sxty4 \
 --save && \
 yarn add \
 babel-cli \
@@ -28,7 +36,15 @@ webpack \
 yargs \
 --dev && \
 bower install \
+blon \
 ehm \
+fno \
+glyo \
 harden \
+ndfo \
+nol \
+numo \
+stro \
+sxty4 \
 --save \
 --force-latest

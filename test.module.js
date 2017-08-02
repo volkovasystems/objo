@@ -70,16 +70,15 @@ const path = require( "path" );
 
 describe( "objo", ( ) => {
 
-	describe( "`objo( )`", ( ) => {
+	describe( "`objo( { 'hello': 'world' } )`", ( ) => {
 		it( "should return Data instance", ( ) => {
-			let data = objo( );
+			let data = objo( { "hello": "world" } );
 
 			assert.equal( typeof data, "object" );
 
 			assert.equal( data.constructor.name, "Data" );
 
-			assert.equal( data.valueOf( ), Object );
-
+			assert.deepEqual( data.valueOf( ), { "hello": "world" } );
 		} );
 	} );
 
@@ -92,15 +91,15 @@ describe( "objo", ( ) => {
 
 describe( "objo", ( ) => {
 
-	describe( "`objo( )`", ( ) => {
+	describe( "`objo( { 'hello': 'world' } )`", ( ) => {
 		it( "should return Data instance", ( ) => {
-			let data = objo( );
+			let data = objo( { "hello": "world" } );
 
 			assert.equal( typeof data, "object" );
 
 			assert.equal( data.constructor.name, "Data" );
 
-			assert.equal( data.valueOf( ), Object );
+			assert.deepEqual( data.valueOf( ), { "hello": "world" } );
 		} );
 	} );
 
@@ -115,15 +114,15 @@ describe( "objo", ( ) => {
 
 	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
-	describe( "`objo( )`", ( ) => {
+	describe( "`objo( { 'hello': 'world' } )`", ( ) => {
 		it( "should return Data instance", ( ) => {
 			//: @ignore:
-			assert.equal( browser.url( bridgeURL ).execute( function( ){ return typeof objo( ); } ).value, "object" );
+			assert.equal( browser.url( bridgeURL ).execute( function( ){ return typeof objo( { "hello": "world" } ); } ).value, "object" );
 			//: @end-ignore
 
-			assert.equal( browser.url( bridgeURL ).execute( ( ) => objo( ).constructor.name ).value, "Data" );
+			assert.equal( browser.url( bridgeURL ).execute( ( ) => objo( { "hello": "world" } ).constructor.name ).value, "Data" );
 
-			assert.equal( browser.url( bridgeURL ).execute( ( ) => `${ objo( ).valueOf( ) }` ).value, "Object" );
+			assert.equal( browser.url( bridgeURL ).execute( ( ) => objo( { "hello": "world" } ).valueOf( ).hello ).value, "world" );
 
 		} );
 	} );

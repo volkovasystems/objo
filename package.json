@@ -36,8 +36,7 @@
 	],
 	"author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
 	"contributors": [
-		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-		"Vinse Vinalon <vinsevinalon@gmail.com>"
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
 	],
 	"license": "MIT",
 	"bugs": {
@@ -46,8 +45,16 @@
 	"homepage": "https://github.com/volkovasystems/objo#readme",
 	"dependencies": {
 		"babel-runtime": "^6.25.0",
-		"ehm": "^0.7.0",
-		"harden": "^0.23.0"
+		"blon": "^0.2.0",
+		"ehm": "^0.20.0",
+		"fno": "^0.3.0",
+		"glyo": "^0.4.0",
+		"harden": "^0.23.0",
+		"ndfo": "^0.6.0",
+		"nol": "^0.8.0",
+		"numo": "^0.1.0",
+		"stro": "^0.2.0",
+		"sxty4": "^0.11.0"
 	},
 	"devDependencies": {
 		"babel-cli": "^6.24.1",
@@ -63,7 +70,7 @@
 		"gulp-rename": "^1.2.2",
 		"gulp-replace": "^0.6.1",
 		"gulp-sourcemaps": "^2.6.0",
-		"mocha": "^3.4.2",
+		"mocha": "^3.5.0",
 		"should": "^11.2.1",
 		"source-map-loader": "^0.2.1",
 		"wdio-json-reporter": "^0.2.1",
