@@ -789,12 +789,12 @@ block-stream@*:
   dependencies:
     inherits "~2.0.0"
 
-blon@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/blon/-/blon-0.2.0.tgz#d7fe7bdeb9d6fb4e4fe276aade0e5d266812d030"
+blon@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/blon/-/blon-0.3.0.tgz#6b6796abd8b0e4fe576e9f96a698eeb376b48b62"
   dependencies:
     babel-runtime "^6.25.0"
-    ehm "^0.19.0"
+    ehm "^0.20.0"
     harden "^0.23.0"
 
 bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.4.0:
@@ -1321,14 +1321,6 @@ ecc-jsbn@~0.1.1:
   dependencies:
     jsbn "~0.1.0"
 
-ehm@^0.19.0:
-  version "0.19.0"
-  resolved "https://registry.yarnpkg.com/ehm/-/ehm-0.19.0.tgz#781e61e6c05e90c803f13e235fc9761aa51a4ee1"
-  dependencies:
-    babel-runtime "^6.25.0"
-    harden "^0.23.0"
-    sxty4 "^0.11.0"
-
 ehm@^0.20.0:
   version "0.20.0"
   resolved "https://registry.yarnpkg.com/ehm/-/ehm-0.20.0.tgz#e1213d776a1eff7bfca944d5bdd3f373a4ac775a"
@@ -1671,12 +1663,12 @@ flagged-respawn@^0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/flagged-respawn/-/flagged-respawn-0.3.2.tgz#ff191eddcd7088a675b2610fffc976be9b8074b5"
 
-fno@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/fno/-/fno-0.3.0.tgz#2a2b5e98acaf79ccd5d1daf22f7bc1c39365822b"
+fno@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/fno/-/fno-0.4.0.tgz#b9efea6bf4bae34b06b0a98a4e841b4d64e7dd58"
   dependencies:
     babel-runtime "^6.25.0"
-    ehm "^0.19.0"
+    ehm "^0.20.0"
     harden "^0.23.0"
 
 for-in@^1.0.1:
@@ -1942,12 +1934,12 @@ glogg@^1.0.0:
   dependencies:
     sparkles "^1.0.0"
 
-glyo@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/glyo/-/glyo-0.4.0.tgz#345a4e1d765ff8525275036fb56676714e9710d2"
+glyo@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/glyo/-/glyo-0.5.0.tgz#281272902a43247074e60ceaa130c277ae3026f7"
   dependencies:
     babel-runtime "^6.25.0"
-    ehm "^0.19.0"
+    ehm "^0.20.0"
     harden "^0.23.0"
 
 graceful-fs@4.X, graceful-fs@^4.1.0, graceful-fs@^4.1.2, graceful-fs@^4.1.4, graceful-fs@^4.1.6, graceful-fs@^4.1.9:
@@ -2969,12 +2961,12 @@ natives@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/natives/-/natives-1.1.0.tgz#e9ff841418a6b2ec7a495e939984f78f163e6e31"
 
-ndfo@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/ndfo/-/ndfo-0.6.0.tgz#ff84e52030810bb512ecfbe1b3aa899a0464e377"
+ndfo@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/ndfo/-/ndfo-0.7.0.tgz#21aba6a457d0b17569a709e331b9f8726ebd0760"
   dependencies:
     babel-runtime "^6.25.0"
-    ehm "^0.19.0"
+    ehm "^0.20.0"
     harden "^0.23.0"
 
 next-tick@1:
@@ -3023,12 +3015,12 @@ node-pre-gyp@^0.6.36:
     tar "^2.2.1"
     tar-pack "^3.4.0"
 
-nol@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/nol/-/nol-0.8.0.tgz#bfac9c158c43d9f21097ef8a1bb412c178fb016d"
+nol@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/nol/-/nol-0.9.0.tgz#3e3f8298cac425ec1887620377aaf01935f31fe3"
   dependencies:
     babel-runtime "^6.25.0"
-    ehm "^0.19.0"
+    ehm "^0.20.0"
     harden "^0.23.0"
 
 nopt@^4.0.1:
@@ -3088,12 +3080,12 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
-numo@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/numo/-/numo-0.1.0.tgz#bec3ad742c9d014953975af61619aaf06fa1c142"
+numo@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/numo/-/numo-0.2.0.tgz#79d4baa2e377f11787c5ed1de57222e47946ab98"
   dependencies:
     babel-runtime "^6.25.0"
-    ehm "^0.19.0"
+    ehm "^0.20.0"
     harden "^0.23.0"
 
 oauth-sign@~0.8.1:
@@ -3425,11 +3417,11 @@ public-encrypt@^4.0.0:
     parse-asn1 "^5.0.0"
     randombytes "^2.0.1"
 
-punycode@1.3.2, punycode@^1.2.4:
+punycode@1.3.2:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.3.2.tgz#9653a036fb7c1ee42342f2325cceefea3926c48d"
 
-punycode@^1.4.1:
+punycode@^1.2.4, punycode@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
 
@@ -4055,12 +4047,12 @@ strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
 
-stro@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/stro/-/stro-0.2.0.tgz#ed610cda73d5f1a470fca18a3fc8218b0a65a4ae"
+stro@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/stro/-/stro-0.3.0.tgz#4442a5075d06753f5f9cc80c071cd07472d8b84e"
   dependencies:
     babel-runtime "^6.25.0"
-    ehm "^0.19.0"
+    ehm "^0.20.0"
     harden "^0.23.0"
 
 sumchecker@^1.2.0:

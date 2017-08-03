@@ -5,15 +5,15 @@
 		"passes": 1,
 		"pending": 0,
 		"failures": 0,
-		"start": "2017-08-02T17:41:59.344Z",
-		"end": "2017-08-02T17:41:59.353Z",
-		"duration": 9
+		"start": "2017-08-03T04:36:06.325Z",
+		"end": "2017-08-03T04:36:06.333Z",
+		"duration": 8
 	},
 	"tests": [
 		{
 			"title": "should return Data instance",
 			"fullTitle": "objo `objo( { 'hello': 'world' } )` should return Data instance",
-			"duration": 6,
+			"duration": 4,
 			"currentRetry": 0,
 			"err": {}
 		}
@@ -24,7 +24,7 @@
 		{
 			"title": "should return Data instance",
 			"fullTitle": "objo `objo( { 'hello': 'world' } )` should return Data instance",
-			"duration": 6,
+			"duration": 4,
 			"currentRetry": 0,
 			"err": {}
 		}
