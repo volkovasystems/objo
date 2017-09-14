@@ -45,13 +45,13 @@
 
 	@include:
 		{
-			"assert": "should",
+			"assert": "should/as-function",
 			"objo": "objo"
 		}
 	@end-include
 */
 
-const assert = require( "should" );
+const assert = require( "should/as-function" );
 
 //: @server:
 const objo = require( "./objo.js" );
@@ -79,6 +79,42 @@ describe( "objo", ( ) => {
 			assert.equal( data.constructor.name, "Data" );
 
 			assert.deepEqual( data.valueOf( ), { "hello": "world" } );
+
+		} );
+	} );
+
+	describe( "`objo( { 'hello': 'world' } ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			assert.equal( typeof objo( { "hello": "world" } ).toString( ), "string" );
+		} );
+	} );
+
+	describe( "`objo( { 'hello': 'world' } ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			assert.equal( typeof objo( { "hello": "world" } ).toNumber( ), "number" );
+		} );
+	} );
+
+	describe( "`objo( { 'hello': 'world' } ).toBoolean( )`", ( ) => {
+		it( "should return boolean type", ( ) => {
+			assert.equal( typeof objo( { "hello": "world" } ).toBoolean( ), "boolean" );
+		} );
+	} );
+
+	describe( "`objo( { 'hello': 'world' } ).toObject( )`", ( ) => {
+		it( "should return object type", ( ) => {
+			let descriptor = objo( { "hello": "world" } ).toObject( ).hello;
+
+			assert.equal( typeof descriptor, "object" );
+
+			assert.equal( "type" in descriptor, true );
+
+			assert.equal( "name" in descriptor, true );
+
+			assert.equal( "value" in descriptor, true );
+
+			assert.equal( "format" in descriptor, true );
+
 		} );
 	} );
 
@@ -100,6 +136,42 @@ describe( "objo", ( ) => {
 			assert.equal( data.constructor.name, "Data" );
 
 			assert.deepEqual( data.valueOf( ), { "hello": "world" } );
+
+		} );
+	} );
+
+	describe( "`objo( { 'hello': 'world' } ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			assert.equal( typeof objo( { "hello": "world" } ).toString( ), "string" );
+		} );
+	} );
+
+	describe( "`objo( { 'hello': 'world' } ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			assert.equal( typeof objo( { "hello": "world" } ).toNumber( ), "number" );
+		} );
+	} );
+
+	describe( "`objo( { 'hello': 'world' } ).toBoolean( )`", ( ) => {
+		it( "should return boolean type", ( ) => {
+			assert.equal( typeof objo( { "hello": "world" } ).toBoolean( ), "boolean" );
+		} );
+	} );
+
+	describe( "`objo( { 'hello': 'world' } ).toObject( )`", ( ) => {
+		it( "should return object type", ( ) => {
+			let descriptor = objo( { "hello": "world" } ).toObject( ).hello;
+
+			assert.equal( typeof descriptor, "object" );
+
+			assert.equal( "type" in descriptor, true );
+
+			assert.equal( "name" in descriptor, true );
+
+			assert.equal( "value" in descriptor, true );
+
+			assert.equal( "format" in descriptor, true );
+
 		} );
 	} );
 
@@ -123,6 +195,79 @@ describe( "objo", ( ) => {
 			assert.equal( browser.url( bridgeURL ).execute( ( ) => objo( { "hello": "world" } ).constructor.name ).value, "Data" );
 
 			assert.equal( browser.url( bridgeURL ).execute( ( ) => objo( { "hello": "world" } ).valueOf( ).hello ).value, "world" );
+
+		} );
+	} );
+
+	describe( "`objo( { 'hello': 'world' } ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof objo( { "hello": "world" } ).toString( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "string" );
+		} );
+	} );
+
+	describe( "`objo( { 'hello': 'world' } ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof objo( { "hello": "world" } ).toNumber( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "number" );
+		} );
+	} );
+
+	describe( "`objo( { 'hello': 'world' } ).toBoolean( )`", ( ) => {
+		it( "should return boolean type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof objo( { "hello": "world" } ).toBoolean( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "boolean" );
+		} );
+	} );
+
+	describe( "`objo( { 'hello': 'world' } ).toObject( )`", ( ) => {
+		it( "should return object type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let descriptor = objo( { "hello": "world" } ).toObject( ).hello;
+
+					let test = typeof descriptor == "object" &&
+						"type" in descriptor == true &&
+						"name" in descriptor == true &&
+						"value" in descriptor == true &&
+						"format" in descriptor == true;
+
+					return test;
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, true );
 
 		} );
 	} );
