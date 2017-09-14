@@ -1,11 +1,11 @@
 {
 	"state": {
-		"passed": 1,
+		"passed": 5,
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-08-07T13:56:59.039Z",
-	"end": "2017-08-07T13:57:38.614Z",
+	"start": "2017-09-14T07:44:32.580Z",
+	"end": "2017-09-14T07:45:08.840Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -28,37 +28,101 @@
 		{
 			"name": "objo",
 			"duration": 0,
-			"start": "2017-08-07T13:57:36.281Z",
+			"start": "2017-09-14T07:45:07.595Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "objo",
-			"duration": 2143,
-			"start": "2017-08-07T13:57:36.282Z",
-			"end": "2017-08-07T13:57:38.425Z",
+			"duration": 1065,
+			"start": "2017-09-14T07:45:07.596Z",
+			"end": "2017-09-14T07:45:08.661Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-08-07T13:57:36.283Z",
-					"end": "2017-08-07T13:57:36.283Z",
+					"start": "2017-09-14T07:45:07.598Z",
+					"end": "2017-09-14T07:45:07.598Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "objo",
 					"associatedTest": "should return Data instance"
 				},
 				{
-					"start": "2017-08-07T13:57:38.424Z",
-					"end": "2017-08-07T13:57:38.425Z",
-					"duration": 1,
+					"start": "2017-09-14T07:45:08.452Z",
+					"end": "2017-09-14T07:45:08.452Z",
+					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "objo",
 					"associatedTest": "should return Data instance"
 				},
 				{
-					"start": "2017-08-07T13:57:38.425Z",
-					"end": "2017-08-07T13:57:38.426Z",
+					"start": "2017-09-14T07:45:08.453Z",
+					"end": "2017-09-14T07:45:08.453Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "objo",
+					"associatedTest": "should return string type"
+				},
+				{
+					"start": "2017-09-14T07:45:08.500Z",
+					"end": "2017-09-14T07:45:08.501Z",
 					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "objo",
+					"associatedTest": "should return string type"
+				},
+				{
+					"start": "2017-09-14T07:45:08.501Z",
+					"end": "2017-09-14T07:45:08.501Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "objo",
+					"associatedTest": "should return number type"
+				},
+				{
+					"start": "2017-09-14T07:45:08.554Z",
+					"end": "2017-09-14T07:45:08.555Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "objo",
+					"associatedTest": "should return number type"
+				},
+				{
+					"start": "2017-09-14T07:45:08.555Z",
+					"end": "2017-09-14T07:45:08.555Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "objo",
+					"associatedTest": "should return boolean type"
+				},
+				{
+					"start": "2017-09-14T07:45:08.609Z",
+					"end": "2017-09-14T07:45:08.609Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "objo",
+					"associatedTest": "should return boolean type"
+				},
+				{
+					"start": "2017-09-14T07:45:08.610Z",
+					"end": "2017-09-14T07:45:08.610Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "objo",
+					"associatedTest": "should return object type"
+				},
+				{
+					"start": "2017-09-14T07:45:08.660Z",
+					"end": "2017-09-14T07:45:08.660Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "objo",
+					"associatedTest": "should return object type"
+				},
+				{
+					"start": "2017-09-14T07:45:08.663Z",
+					"end": "2017-09-14T07:45:08.663Z",
+					"duration": 0,
 					"title": "\"after all\" hook",
 					"associatedSuite": "objo"
 				}
@@ -66,15 +130,79 @@
 		},
 		{
 			"name": "`objo( { 'hello': 'world' } )`",
-			"duration": 2143,
-			"start": "2017-08-07T13:57:36.282Z",
-			"end": "2017-08-07T13:57:38.425Z",
+			"duration": 856,
+			"start": "2017-09-14T07:45:07.597Z",
+			"end": "2017-09-14T07:45:08.453Z",
 			"tests": [
 				{
 					"name": "should return Data instance",
-					"start": "2017-08-07T13:57:36.283Z",
-					"end": "2017-08-07T13:57:38.424Z",
-					"duration": 2141,
+					"start": "2017-09-14T07:45:07.597Z",
+					"end": "2017-09-14T07:45:08.452Z",
+					"duration": 855,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`objo( { 'hello': 'world' } ).toString( )`",
+			"duration": 48,
+			"start": "2017-09-14T07:45:08.453Z",
+			"end": "2017-09-14T07:45:08.501Z",
+			"tests": [
+				{
+					"name": "should return string type",
+					"start": "2017-09-14T07:45:08.453Z",
+					"end": "2017-09-14T07:45:08.500Z",
+					"duration": 47,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`objo( { 'hello': 'world' } ).toNumber( )`",
+			"duration": 54,
+			"start": "2017-09-14T07:45:08.501Z",
+			"end": "2017-09-14T07:45:08.555Z",
+			"tests": [
+				{
+					"name": "should return number type",
+					"start": "2017-09-14T07:45:08.501Z",
+					"end": "2017-09-14T07:45:08.554Z",
+					"duration": 53,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`objo( { 'hello': 'world' } ).toBoolean( )`",
+			"duration": 55,
+			"start": "2017-09-14T07:45:08.555Z",
+			"end": "2017-09-14T07:45:08.610Z",
+			"tests": [
+				{
+					"name": "should return boolean type",
+					"start": "2017-09-14T07:45:08.555Z",
+					"end": "2017-09-14T07:45:08.609Z",
+					"duration": 54,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`objo( { 'hello': 'world' } ).toObject( )`",
+			"duration": 51,
+			"start": "2017-09-14T07:45:08.610Z",
+			"end": "2017-09-14T07:45:08.661Z",
+			"tests": [
+				{
+					"name": "should return object type",
+					"start": "2017-09-14T07:45:08.610Z",
+					"end": "2017-09-14T07:45:08.660Z",
+					"duration": 50,
 					"state": "pass"
 				}
 			],

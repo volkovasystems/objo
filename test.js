@@ -45,13 +45,13 @@
 
 	@include:
 		{
-			"assert": "should",
+			"assert": "should/as-function",
 			"objo": "objo"
 		}
 	@end-include
 */
 
-const assert = require( "should" );
+const assert = require( "should/as-function" );
 
 //: @server:
 const objo = require( "./objo.js" );
@@ -75,6 +75,42 @@ describe( "objo", ( ) => {
 			assert.equal( data.constructor.name, "Data" );
 
 			assert.deepEqual( data.valueOf( ), { "hello": "world" } );
+
+		} );
+	} );
+
+	describe( "`objo( { 'hello': 'world' } ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			assert.equal( typeof objo( { "hello": "world" } ).toString( ), "string" );
+		} );
+	} );
+
+	describe( "`objo( { 'hello': 'world' } ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			assert.equal( typeof objo( { "hello": "world" } ).toNumber( ), "number" );
+		} );
+	} );
+
+	describe( "`objo( { 'hello': 'world' } ).toBoolean( )`", ( ) => {
+		it( "should return boolean type", ( ) => {
+			assert.equal( typeof objo( { "hello": "world" } ).toBoolean( ), "boolean" );
+		} );
+	} );
+
+	describe( "`objo( { 'hello': 'world' } ).toObject( )`", ( ) => {
+		it( "should return object type", ( ) => {
+			let descriptor = objo( { "hello": "world" } ).toObject( ).hello;
+
+			assert.equal( typeof descriptor, "object" );
+
+			assert.equal( "type" in descriptor, true );
+
+			assert.equal( "name" in descriptor, true );
+
+			assert.equal( "value" in descriptor, true );
+
+			assert.equal( "format" in descriptor, true );
+
 		} );
 	} );
 

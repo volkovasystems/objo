@@ -1,19 +1,47 @@
 {
 	"stats": {
-		"suites": 2,
-		"tests": 1,
-		"passes": 1,
+		"suites": 6,
+		"tests": 5,
+		"passes": 5,
 		"pending": 0,
 		"failures": 0,
-		"start": "2017-08-07T13:56:57.633Z",
-		"end": "2017-08-07T13:56:57.640Z",
-		"duration": 7
+		"start": "2017-09-14T07:44:31.472Z",
+		"end": "2017-09-14T07:44:31.482Z",
+		"duration": 10
 	},
 	"tests": [
 		{
 			"title": "should return Data instance",
 			"fullTitle": "objo `objo( { 'hello': 'world' } )` should return Data instance",
 			"duration": 4,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "objo `objo( { 'hello': 'world' } ).toString( )` should return string type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "objo `objo( { 'hello': 'world' } ).toNumber( )` should return number type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return boolean type",
+			"fullTitle": "objo `objo( { 'hello': 'world' } ).toBoolean( )` should return boolean type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return object type",
+			"fullTitle": "objo `objo( { 'hello': 'world' } ).toObject( )` should return object type",
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		}
@@ -25,6 +53,34 @@
 			"title": "should return Data instance",
 			"fullTitle": "objo `objo( { 'hello': 'world' } )` should return Data instance",
 			"duration": 4,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "objo `objo( { 'hello': 'world' } ).toString( )` should return string type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "objo `objo( { 'hello': 'world' } ).toNumber( )` should return number type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return boolean type",
+			"fullTitle": "objo `objo( { 'hello': 'world' } ).toBoolean( )` should return boolean type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return object type",
+			"fullTitle": "objo `objo( { 'hello': 'world' } ).toObject( )` should return object type",
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		}
