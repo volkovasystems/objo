@@ -166,6 +166,12 @@ describe( "objo", ( ) => {
 		} );
 	} );
 
+	describe( "`objo( [ undefined ] ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			assert.equal( typeof objo( [ undefined ] ).toString( ), "string" );
+		} );
+	} );
+
 	describe( "`objo( [ 'hello' ] ).toNumber( )`", ( ) => {
 		it( "should return number type", ( ) => {
 			assert.equal( typeof objo( [ "hello" ] ).toNumber( ), "number" );
@@ -214,6 +220,12 @@ describe( "objo", ( ) => {
 		} );
 	} );
 
+	describe( "`objo( [ undefined ] ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			assert.equal( typeof objo( [ undefined ] ).toNumber( ), "number" );
+		} );
+	} );
+
 	describe( "`objo( [ 'hello' ] ).toBoolean( )`", ( ) => {
 		it( "should return true", ( ) => {
 			assert.equal( objo( [ "hello" ] ).toBoolean( ), true );
@@ -259,6 +271,12 @@ describe( "objo", ( ) => {
 	describe( "`objo( [ Symbol.for( 'hello' ) ] ).toBoolean( )`", ( ) => {
 		it( "should return true", ( ) => {
 			assert.equal( objo( [ Symbol.for( "hello" ) ] ).toBoolean( ), true );
+		} );
+	} );
+
+	describe( "`objo( [ undefined ] ).toBoolean( )`", ( ) => {
+		it( "should return true", ( ) => {
+			assert.equal( objo( [ undefined ] ).toBoolean( ), true );
 		} );
 	} );
 
@@ -384,6 +402,23 @@ describe( "objo", ( ) => {
 	describe( "`objo( [ Symbol.for( 'hello' ) ] ).toObject( )`", ( ) => {
 		it( "should contain object type", ( ) => {
 			let descriptor = objo( [ Symbol.for( "hello" ) ] ).toObject( )[ 0 ];
+
+			assert.equal( typeof descriptor, "object" );
+
+			assert.equal( "type" in descriptor, true );
+
+			assert.equal( "name" in descriptor, true );
+
+			assert.equal( "value" in descriptor, true );
+
+			assert.equal( "format" in descriptor, true );
+
+		} );
+	} );
+
+	describe( "`objo( [ undefined ] ).toObject( )`", ( ) => {
+		it( "should contain object type", ( ) => {
+			let descriptor = objo( [ undefined ] ).toObject( )[ 0 ];
 
 			assert.equal( typeof descriptor, "object" );
 
@@ -503,6 +538,12 @@ describe( "objo", ( ) => {
 		} );
 	} );
 
+	describe( "`objo( [ undefined ] ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			assert.equal( typeof objo( [ undefined ] ).toString( ), "string" );
+		} );
+	} );
+
 	describe( "`objo( [ 'hello' ] ).toNumber( )`", ( ) => {
 		it( "should return number type", ( ) => {
 			assert.equal( typeof objo( [ "hello" ] ).toNumber( ), "number" );
@@ -551,6 +592,12 @@ describe( "objo", ( ) => {
 		} );
 	} );
 
+	describe( "`objo( [ undefined ] ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			assert.equal( typeof objo( [ undefined ] ).toNumber( ), "number" );
+		} );
+	} );
+
 	describe( "`objo( [ 'hello' ] ).toBoolean( )`", ( ) => {
 		it( "should return true", ( ) => {
 			assert.equal( objo( [ "hello" ] ).toBoolean( ), true );
@@ -596,6 +643,12 @@ describe( "objo", ( ) => {
 	describe( "`objo( [ Symbol.for( 'hello' ) ] ).toBoolean( )`", ( ) => {
 		it( "should return true", ( ) => {
 			assert.equal( objo( [ Symbol.for( "hello" ) ] ).toBoolean( ), true );
+		} );
+	} );
+
+	describe( "`objo( [ undefined ] ).toBoolean( )`", ( ) => {
+		it( "should return true", ( ) => {
+			assert.equal( objo( [ undefined ] ).toBoolean( ), true );
 		} );
 	} );
 
@@ -721,6 +774,23 @@ describe( "objo", ( ) => {
 	describe( "`objo( [ Symbol.for( 'hello' ) ] ).toObject( )`", ( ) => {
 		it( "should contain object type", ( ) => {
 			let descriptor = objo( [ Symbol.for( "hello" ) ] ).toObject( )[ 0 ];
+
+			assert.equal( typeof descriptor, "object" );
+
+			assert.equal( "type" in descriptor, true );
+
+			assert.equal( "name" in descriptor, true );
+
+			assert.equal( "value" in descriptor, true );
+
+			assert.equal( "format" in descriptor, true );
+
+		} );
+	} );
+
+	describe( "`objo( [ undefined ] ).toObject( )`", ( ) => {
+		it( "should contain object type", ( ) => {
+			let descriptor = objo( [ undefined ] ).toObject( )[ 0 ];
 
 			assert.equal( typeof descriptor, "object" );
 
