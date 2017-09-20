@@ -214,6 +214,54 @@ describe( "objo", ( ) => {
 		} );
 	} );
 
+	describe( "`objo( [ 'hello' ] ).toBoolean( )`", ( ) => {
+		it( "should return true", ( ) => {
+			assert.equal( objo( [ "hello" ] ).toBoolean( ), true );
+		} );
+	} );
+
+	describe( "`objo( [ 1 ] ).toBoolean( )`", ( ) => {
+		it( "should return true", ( ) => {
+			assert.equal( objo( [ 1 ] ).toBoolean( ), true );
+		} );
+	} );
+
+	describe( "`objo( [ Infinity ] ).toBoolean( )`", ( ) => {
+		it( "should return true", ( ) => {
+			assert.equal( objo( [ Infinity ] ).toBoolean( ), true );
+		} );
+	} );
+
+	describe( "`objo( [ NaN ] ).toBoolean( )`", ( ) => {
+		it( "should return true", ( ) => {
+			assert.equal( objo( [ NaN ] ).toBoolean( ), true );
+		} );
+	} );
+
+	describe( "`objo( [ true ] ).toBoolean( )`", ( ) => {
+		it( "should return true", ( ) => {
+			assert.equal( objo( [ true ] ).toBoolean( ), true );
+		} );
+	} );
+
+	describe( "`objo( [ { 'hello': 'world' } ] ).toBoolean( )`", ( ) => {
+		it( "should return true", ( ) => {
+			assert.equal( objo( [ { "hello": "world" } ] ).toBoolean( ), true );
+		} );
+	} );
+
+	describe( "`objo( [ null ] ).toBoolean( )`", ( ) => {
+		it( "should return true", ( ) => {
+			assert.equal( objo( [ null ] ).toBoolean( ), true );
+		} );
+	} );
+
+	describe( "`objo( [ Symbol.for( 'hello' ) ] ).toBoolean( )`", ( ) => {
+		it( "should return true", ( ) => {
+			assert.equal( objo( [ Symbol.for( 'hello' ) ] ).toBoolean( ), true );
+		} );
+	} );
+
 } );
 
 //: @end-server
