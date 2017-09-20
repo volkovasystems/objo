@@ -118,6 +118,54 @@ describe( "objo", ( ) => {
 		} );
 	} );
 
+	describe( "`objo( [ 'hello' ] ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			assert.equal( typeof objo( [ "hello" ] ).toString( ), "string" );
+		} );
+	} );
+
+	describe( "`objo( [ 1 ] ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			assert.equal( typeof objo( [ 1 ] ).toString( ), "string" );
+		} );
+	} );
+
+	describe( "`objo( [ Infinity ] ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			assert.equal( typeof objo( [ Infinity ] ).toString( ), "string" );
+		} );
+	} );
+
+	describe( "`objo( [ NaN ] ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			assert.equal( typeof objo( [ NaN ] ).toString( ), "string" );
+		} );
+	} );
+
+	describe( "`objo( [ true ] ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			assert.equal( typeof objo( [ true ] ).toString( ), "string" );
+		} );
+	} );
+
+	describe( "`objo( [ { 'hello': 'world' } ] ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			assert.equal( typeof objo( [ { "hello": "world" } ] ).toString( ), "string" );
+		} );
+	} );
+
+	describe( "`objo( [ null ] ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			assert.equal( typeof objo( [ null ] ).toString( ), "string" );
+		} );
+	} );
+
+	describe( "`objo( [ Symbol.for( 'hello' ) ] ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			assert.equal( typeof objo( [ Symbol.for( "hello" ) ] ).toString( ), "string" );
+		} );
+	} );
+
 } );
 
 //: @end-server
