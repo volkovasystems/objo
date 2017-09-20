@@ -258,7 +258,7 @@ describe( "objo", ( ) => {
 
 	describe( "`objo( [ Symbol.for( 'hello' ) ] ).toBoolean( )`", ( ) => {
 		it( "should return true", ( ) => {
-			assert.equal( objo( [ Symbol.for( 'hello' ) ] ).toBoolean( ), true );
+			assert.equal( objo( [ Symbol.for( "hello" ) ] ).toBoolean( ), true );
 		} );
 	} );
 
