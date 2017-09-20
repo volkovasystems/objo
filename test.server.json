@@ -1,19 +1,19 @@
 {
 	"stats": {
-		"suites": 6,
-		"tests": 5,
-		"passes": 5,
+		"suites": 42,
+		"tests": 41,
+		"passes": 41,
 		"pending": 0,
 		"failures": 0,
-		"start": "2017-09-14T07:44:31.472Z",
-		"end": "2017-09-14T07:44:31.482Z",
-		"duration": 10
+		"start": "2017-09-20T07:00:06.973Z",
+		"end": "2017-09-20T07:00:07.003Z",
+		"duration": 30
 	},
 	"tests": [
 		{
 			"title": "should return Data instance",
 			"fullTitle": "objo `objo( { 'hello': 'world' } )` should return Data instance",
-			"duration": 4,
+			"duration": 6,
 			"currentRetry": 0,
 			"err": {}
 		},
@@ -41,6 +41,258 @@
 		{
 			"title": "should return object type",
 			"fullTitle": "objo `objo( { 'hello': 'world' } ).toObject( )` should return object type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "objo `objo( [ 'hello' ] ).toString( )` should return string type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "objo `objo( [ 1 ] ).toString( )` should return string type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "objo `objo( [ Infinity ] ).toString( )` should return string type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "objo `objo( [ NaN ] ).toString( )` should return string type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "objo `objo( [ true ] ).toString( )` should return string type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "objo `objo( [ { 'hello': 'world' } ] ).toString( )` should return string type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "objo `objo( [ null ] ).toString( )` should return string type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "objo `objo( [ Symbol.for( 'hello' ) ] ).toString( )` should return string type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "objo `objo( [ undefined ] ).toString( )` should return string type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "objo `objo( [ 'hello' ] ).toNumber( )` should return number type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "objo `objo( [ 1 ] ).toNumber( )` should return number type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "objo `objo( [ Infinity ] ).toNumber( )` should return number type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "objo `objo( [ NaN ] ).toNumber( )` should return number type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "objo `objo( [ true ] ).toNumber( )` should return number type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "objo `objo( [ { 'hello': 'world' } ] ).toNumber( )` should return number type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "objo `objo( [ null ] ).toNumber( )` should return number type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "objo `objo( [ Symbol.for( 'hello' ) ] ).toNumber( )` should return number type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "objo `objo( [ undefined ] ).toNumber( )` should return number type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "objo `objo( [ 'hello' ] ).toBoolean( )` should return true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "objo `objo( [ 1 ] ).toBoolean( )` should return true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "objo `objo( [ Infinity ] ).toBoolean( )` should return true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "objo `objo( [ NaN ] ).toBoolean( )` should return true",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "objo `objo( [ true ] ).toBoolean( )` should return true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "objo `objo( [ { 'hello': 'world' } ] ).toBoolean( )` should return true",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "objo `objo( [ null ] ).toBoolean( )` should return true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "objo `objo( [ Symbol.for( 'hello' ) ] ).toBoolean( )` should return true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "objo `objo( [ undefined ] ).toBoolean( )` should return true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain object type",
+			"fullTitle": "objo `objo( [ 'hello' ] ).toObject( )` should contain object type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain object type",
+			"fullTitle": "objo `objo( [ 1 ] ).toObject( )` should contain object type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain object type",
+			"fullTitle": "objo `objo( [ Infinity ] ).toObject( )` should contain object type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain object type",
+			"fullTitle": "objo `objo( [ NaN ] ).toObject( )` should contain object type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain object type",
+			"fullTitle": "objo `objo( [ true ] ).toObject( )` should contain object type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain object type",
+			"fullTitle": "objo `objo( [ { 'hello': 'world' } ] ).toObject( )` should contain object type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain object type",
+			"fullTitle": "objo `objo( [ null ] ).toObject( )` should contain object type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain object type",
+			"fullTitle": "objo `objo( [ Symbol.for( 'hello' ) ] ).toObject( )` should contain object type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain object type",
+			"fullTitle": "objo `objo( [ undefined ] ).toObject( )` should contain object type",
 			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
@@ -52,7 +304,7 @@
 		{
 			"title": "should return Data instance",
 			"fullTitle": "objo `objo( { 'hello': 'world' } )` should return Data instance",
-			"duration": 4,
+			"duration": 6,
 			"currentRetry": 0,
 			"err": {}
 		},
@@ -80,6 +332,258 @@
 		{
 			"title": "should return object type",
 			"fullTitle": "objo `objo( { 'hello': 'world' } ).toObject( )` should return object type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "objo `objo( [ 'hello' ] ).toString( )` should return string type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "objo `objo( [ 1 ] ).toString( )` should return string type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "objo `objo( [ Infinity ] ).toString( )` should return string type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "objo `objo( [ NaN ] ).toString( )` should return string type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "objo `objo( [ true ] ).toString( )` should return string type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "objo `objo( [ { 'hello': 'world' } ] ).toString( )` should return string type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "objo `objo( [ null ] ).toString( )` should return string type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "objo `objo( [ Symbol.for( 'hello' ) ] ).toString( )` should return string type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "objo `objo( [ undefined ] ).toString( )` should return string type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "objo `objo( [ 'hello' ] ).toNumber( )` should return number type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "objo `objo( [ 1 ] ).toNumber( )` should return number type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "objo `objo( [ Infinity ] ).toNumber( )` should return number type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "objo `objo( [ NaN ] ).toNumber( )` should return number type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "objo `objo( [ true ] ).toNumber( )` should return number type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "objo `objo( [ { 'hello': 'world' } ] ).toNumber( )` should return number type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "objo `objo( [ null ] ).toNumber( )` should return number type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "objo `objo( [ Symbol.for( 'hello' ) ] ).toNumber( )` should return number type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "objo `objo( [ undefined ] ).toNumber( )` should return number type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "objo `objo( [ 'hello' ] ).toBoolean( )` should return true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "objo `objo( [ 1 ] ).toBoolean( )` should return true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "objo `objo( [ Infinity ] ).toBoolean( )` should return true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "objo `objo( [ NaN ] ).toBoolean( )` should return true",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "objo `objo( [ true ] ).toBoolean( )` should return true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "objo `objo( [ { 'hello': 'world' } ] ).toBoolean( )` should return true",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "objo `objo( [ null ] ).toBoolean( )` should return true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "objo `objo( [ Symbol.for( 'hello' ) ] ).toBoolean( )` should return true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return true",
+			"fullTitle": "objo `objo( [ undefined ] ).toBoolean( )` should return true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain object type",
+			"fullTitle": "objo `objo( [ 'hello' ] ).toObject( )` should contain object type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain object type",
+			"fullTitle": "objo `objo( [ 1 ] ).toObject( )` should contain object type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain object type",
+			"fullTitle": "objo `objo( [ Infinity ] ).toObject( )` should contain object type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain object type",
+			"fullTitle": "objo `objo( [ NaN ] ).toObject( )` should contain object type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain object type",
+			"fullTitle": "objo `objo( [ true ] ).toObject( )` should contain object type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain object type",
+			"fullTitle": "objo `objo( [ { 'hello': 'world' } ] ).toObject( )` should contain object type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain object type",
+			"fullTitle": "objo `objo( [ null ] ).toObject( )` should contain object type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain object type",
+			"fullTitle": "objo `objo( [ Symbol.for( 'hello' ) ] ).toObject( )` should contain object type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain object type",
+			"fullTitle": "objo `objo( [ undefined ] ).toObject( )` should contain object type",
 			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
