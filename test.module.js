@@ -832,6 +832,602 @@ describe( "objo", ( ) => {
 		} );
 	} );
 
+	describe( "`objo( [ 'hello' ] ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof objo( [ "hello" ] ).toString( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "string" );
+
+		} );
+	} );
+
+	describe( "`objo( [ 1 ] ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof objo( [ 1 ] ).toString( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "string" );
+
+		} );
+	} );
+
+	describe( "`objo( [ Infinity ] ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof objo( [ Infinity ] ).toString( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "string" );
+
+		} );
+	} );
+
+	describe( "`objo( [ NaN ] ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof objo( [ NaN ] ).toString( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "string" );
+
+		} );
+	} );
+
+	describe( "`objo( [ true ] ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof objo( [ true ] ).toString( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "string" );
+
+		} );
+	} );
+
+	describe( "`objo( [ { 'hello': 'world' } ] ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof objo( [ { "hello": "world" } ] ).toString( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "string" );
+
+		} );
+	} );
+
+	describe( "`objo( [ null ] ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof objo( [ null ] ).toString( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "string" );
+
+		} );
+	} );
+
+	describe( "`objo( [ Symbol.for( 'hello' ) ] ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof objo( [ Symbol.for( "hello" ) ] ).toString( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "string" );
+
+		} );
+	} );
+
+	describe( "`objo( [ 'hello' ] ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof objo( [ "hello" ] ).toNumber( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "number" );
+
+		} );
+	} );
+
+	describe( "`objo( [ 1 ] ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof objo( [ 1 ] ).toNumber( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "number" );
+
+		} );
+	} );
+
+	describe( "`objo( [ Infinity ] ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof objo( [ Infinity ] ).toNumber( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "number" );
+
+		} );
+	} );
+
+	describe( "`objo( [ NaN ] ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof objo( [ NaN ] ).toNumber( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "number" );
+
+		} );
+	} );
+
+	describe( "`objo( [ true ] ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof objo( [ true ] ).toNumber( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "number" );
+
+		} );
+	} );
+
+	describe( "`objo( [ { 'hello': 'world' } ] ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof objo( [ { "hello": "world" } ] ).toNumber( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "number" );
+
+		} );
+	} );
+
+	describe( "`objo( [ null ] ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof objo( [ null ] ).toNumber( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "number" );
+
+		} );
+	} );
+
+	describe( "`objo( [ Symbol.for( 'hello' ) ] ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof objo( [ Symbol.for( "hello" ) ] ).toNumber( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "number" );
+
+		} );
+	} );
+
+	describe( "`objo( [ 'hello' ] ).toBoolean( )`", ( ) => {
+		it( "should return true", ( ) => {
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return objo( [ "hello" ] ).toBoolean( );
+				}
+
+			).value;
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`objo( [ 1 ] ).toBoolean( )`", ( ) => {
+		it( "should return true", ( ) => {
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return objo( [ 1 ] ).toBoolean( );
+				}
+
+			).value;
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`objo( [ Infinity ] ).toBoolean( )`", ( ) => {
+		it( "should return true", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return objo( [ Infinity ] ).toBoolean( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`objo( [ NaN ] ).toBoolean( )`", ( ) => {
+		it( "should return true", ( ) => {
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return objo( [ NaN ] ).toBoolean( );
+				}
+
+			).value;
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`objo( [ true ] ).toBoolean( )`", ( ) => {
+		it( "should return true", ( ) => {
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return objo( [ true ] ).toBoolean( );
+				}
+
+			).value;
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`objo( [ { 'hello': 'world' } ] ).toBoolean( )`", ( ) => {
+		it( "should return true", ( ) => {
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return objo( [ { "hello": "world" } ] ).toBoolean( );
+				}
+
+			).value;
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`objo( [ null ] ).toBoolean( )`", ( ) => {
+		it( "should return true", ( ) => {
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return objo( [ null ] ).toBoolean( );
+				}
+
+			).value;
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`objo( [ Symbol.for( 'hello' ) ] ).toBoolean( )`", ( ) => {
+		it( "should return true", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return objo( [ Symbol.for( "hello" ) ] ).toBoolean( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`objo( [ 'hello' ] ).toObject( )`", ( ) => {
+		it( "should contain object type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let descriptor = objo( [ "hello" ] ).toObject( )[ 0 ];
+
+					let test = typeof descriptor == "object" &&
+						"type" in descriptor == true &&
+						"name" in descriptor == true &&
+						"value" in descriptor == true &&
+						"format" in descriptor == true;
+
+					return test;
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`objo( [ 1 ] ).toObject( )`", ( ) => {
+		it( "should contain object type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let descriptor = objo( [ 1 ] ).toObject( )[ 0 ];
+
+					let test = typeof descriptor == "object" &&
+						"type" in descriptor == true &&
+						"name" in descriptor == true &&
+						"value" in descriptor == true &&
+						"format" in descriptor == true;
+
+					return test;
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`objo( [ Infinity ] ).toObject( )`", ( ) => {
+		it( "should contain object type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let descriptor = objo( [ Infinity ] ).toObject( )[ 0 ];
+
+					let test = typeof descriptor == "object" &&
+						"type" in descriptor == true &&
+						"name" in descriptor == true &&
+						"value" in descriptor == true &&
+						"format" in descriptor == true;
+
+					return test;
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`objo( [ NaN ] ).toObject( )`", ( ) => {
+		it( "should contain object type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let descriptor = objo( [ NaN ] ).toObject( )[ 0 ];
+
+					let test = typeof descriptor == "object" &&
+						"type" in descriptor == true &&
+						"name" in descriptor == true &&
+						"value" in descriptor == true &&
+						"format" in descriptor == true;
+
+					return test;
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`objo( [ true ] ).toObject( )`", ( ) => {
+		it( "should contain object type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let descriptor = objo( [ true ] ).toObject( )[ 0 ];
+
+					let test = typeof descriptor == "object" &&
+						"type" in descriptor == true &&
+						"name" in descriptor == true &&
+						"value" in descriptor == true &&
+						"format" in descriptor == true;
+
+					return test;
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`objo( [ { 'hello': 'world' } ] ).toObject( )`", ( ) => {
+		it( "should contain object type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let descriptor = objo( [ { "hello": "world" } ] ).toObject( )[ 0 ].hello;
+
+					let test = typeof descriptor == "object" &&
+						"type" in descriptor == true &&
+						"name" in descriptor == true &&
+						"value" in descriptor == true &&
+						"format" in descriptor == true;
+
+					return test;
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`objo( [ null ] ).toObject( )`", ( ) => {
+		it( "should contain object type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let descriptor = objo( [ null ] ).toObject( )[ 0 ];
+
+					let test = typeof descriptor == "object" &&
+						"type" in descriptor == true &&
+						"name" in descriptor == true &&
+						"value" in descriptor == true &&
+						"format" in descriptor == true;
+
+					return test;
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`objo( [ Symbol.for( 'hello' ) ] ).toObject( )`", ( ) => {
+		it( "should contain object type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let descriptor = objo( [ Symbol.for( "hello" ) ] ).toObject( )[ 0 ];
+
+					let test = typeof descriptor == "object" &&
+						"type" in descriptor == true &&
+						"name" in descriptor == true &&
+						"value" in descriptor == true &&
+						"format" in descriptor == true;
+
+					return test;
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
 } );
 
 //: @end-bridge
