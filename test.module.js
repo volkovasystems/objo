@@ -166,6 +166,54 @@ describe( "objo", ( ) => {
 		} );
 	} );
 
+	describe( "`objo( [ 'hello' ] ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			assert.equal( typeof objo( [ "hello" ] ).toNumber( ), "number" );
+		} );
+	} );
+
+	describe( "`objo( [ 1 ] ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			assert.equal( typeof objo( [ 1 ] ).toNumber( ), "number" );
+		} );
+	} );
+
+	describe( "`objo( [ Infinity ] ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			assert.equal( typeof objo( [ Infinity ] ).toNumber( ), "number" );
+		} );
+	} );
+
+	describe( "`objo( [ NaN ] ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			assert.equal( typeof objo( [ NaN ] ).toNumber( ), "number" );
+		} );
+	} );
+
+	describe( "`objo( [ true ] ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			assert.equal( typeof objo( [ true ] ).toNumber( ), "number" );
+		} );
+	} );
+
+	describe( "`objo( [ { 'hello': 'world' } ] ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			assert.equal( typeof objo( [ { "hello": "world" } ] ).toNumber( ), "number" );
+		} );
+	} );
+
+	describe( "`objo( [ null ] ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			assert.equal( typeof objo( [ null ] ).toNumber( ), "number" );
+		} );
+	} );
+
+	describe( "`objo( [ Symbol.for( 'hello' ) ] ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			assert.equal( typeof objo( [ Symbol.for( "hello" ) ] ).toNumber( ), "number" );
+		} );
+	} );
+
 } );
 
 //: @end-server
