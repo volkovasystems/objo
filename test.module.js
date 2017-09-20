@@ -1038,6 +1038,23 @@ describe( "objo", ( ) => {
 		} );
 	} );
 
+	describe( "`objo( [ undefined ] ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof objo( [ undefined ] ).toString( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "string" );
+
+		} );
+	} );
+
 	describe( "`objo( [ 'hello' ] ).toNumber( )`", ( ) => {
 		it( "should return number type", ( ) => {
 			//: @ignore:
@@ -1174,6 +1191,23 @@ describe( "objo", ( ) => {
 		} );
 	} );
 
+	describe( "`objo( [ undefined ] ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof objo( [ undefined ] ).toNumber( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "number" );
+
+		} );
+	} );
+
 	describe( "`objo( [ 'hello' ] ).toBoolean( )`", ( ) => {
 		it( "should return true", ( ) => {
 			let result = browser.url( bridgeURL ).execute(
@@ -1292,6 +1326,21 @@ describe( "objo", ( ) => {
 
 			).value;
 			//: @end-ignore
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`objo( [ undefined ] ).toBoolean( )`", ( ) => {
+		it( "should return true", ( ) => {
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return objo( [ undefined ] ).toBoolean( );
+				}
+
+			).value;
 
 			assert.equal( result, true );
 
@@ -1480,6 +1529,31 @@ describe( "objo", ( ) => {
 
 				function( ){
 					let descriptor = objo( [ Symbol.for( "hello" ) ] ).toObject( )[ 0 ];
+
+					let test = typeof descriptor == "object" &&
+						"type" in descriptor == true &&
+						"name" in descriptor == true &&
+						"value" in descriptor == true &&
+						"format" in descriptor == true;
+
+					return test;
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`objo( [ undefined ] ).toObject( )`", ( ) => {
+		it( "should contain object type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let descriptor = objo( [ undefined ] ).toObject( )[ 0 ];
 
 					let test = typeof descriptor == "object" &&
 						"type" in descriptor == true &&
